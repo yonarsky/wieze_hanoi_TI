@@ -10,7 +10,8 @@ function hanoiTower(x, A, B, C) {
 button.onclick = function() {
     document.getElementById("list").innerHTML = "";
     var n = parseInt(document.getElementById('number-input').value, 10);
-    document.getElementById('list').innerHTML += '<button type="button" class="btn btn-primary" id="num"> Liczba klocków <span class="badge badge-light">' + n + '</span>'
+    var k = Math.pow(2,n)-1;
+    document.getElementById('list').innerHTML += '<button type="button" class="btn btn-primary" id="num"> Liczba kroków <span class="badge badge-light">' + k + '</span>'
     hanoiTower(n,"A","B","C");
 };
 
