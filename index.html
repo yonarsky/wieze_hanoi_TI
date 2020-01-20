@@ -15,7 +15,7 @@
     </div>
     <div class="container">
         <div class="alert alert-primary" role="alert" id="alert">
-            Podaj liczbę klocków, dla którch chcesz wyświetlić kolejne kroki: (1-11).
+            Podaj liczbę klocków (1-14), dla którch chcesz wyświetlić kolejne kroki.
         </div>
     </div>
     <div class="container">
@@ -23,7 +23,7 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
            <div class="input-group mb-3">
-            <input class="form-control" id="number-input" type="number" min="1" max="11" onkeyup="if(parseInt(this.value)>11){ this.value = 11; return false; } if(parseInt(this.value)<1){ this.value = 1; return false; }">
+            <input class="form-control" id="number-input" type="number" min="1" max="14" onkeyup="if(parseInt(this.value)>14){ this.value = 14; return false; } if(parseInt(this.value)<1){ this.value = 1; return false; }">
             <div class="input-group-append">
                 <button class="btn btn-outline-secondary" type="button" id="buttonId">Pokaż kroki</button>
              </div>
